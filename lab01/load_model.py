@@ -1,8 +1,11 @@
+from pathlib import Path
 import joblib
 
-model = joblib.load("iris_model_v1.joblib")
+model_path = Path(__file__).resolve().parent / "iris_model_v1.joblib"
+model = joblib.load(model_path)
 
 sample = [[5.1, 3.5, 1.4, 0.2]]
 prediction = model.predict(sample)
 
-print("Predykcja dla próbki:", prediction[0])
+print("Przykładowy rekord:", sample)
+print("Przewidziana klasa:", prediction[0])
