@@ -43,7 +43,6 @@ def read_root():
 @app.post("/predict")
 def predict(data: InputData):
 
-    # Walidacja danych
     if data.hours_of_study < 0:
         raise HTTPException(
             status_code=400,
