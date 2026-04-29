@@ -1,4 +1,4 @@
-name: Lab06 ML Tests
+name: Lab06 ML Tests and Docker Build
 
 "on":
   push:
@@ -7,6 +7,10 @@ name: Lab06 ML Tests
   pull_request:
     branches:
       - main
+
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   test:
@@ -27,7 +31,29 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Uruchomienie testów.
+      - name: Uruchomienie testów
         run: |
           cd lab06
           pytest
+
+  docker:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pobranie kodu
+        uses: actions/checkout@v4
+
+      - name: Logowanie do GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Budowanie i publikacja obrazu Docker
+        uses: docker/build-push-action@v6
+        with:
+          context: ./lab06
+          push: true
+          tags: ghcr.io/roblux2115/ntpd-lab06:latest
