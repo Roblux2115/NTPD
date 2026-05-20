@@ -1,0 +1,11 @@
+order_id,product,category,quantity,price,city
+1,Laptop,Electronics,2,3500,Warsaw
+2,Mouse,Electronics,5,80,Krakow
+3,Desk,Furniture,1,700,Warsaw
+4,Chair,Furniture,4,250,Gdansk
+5,Keyboard,Electronics,3,150,Krakow
+6,Monitor,Electronics,2,900,Warsaw
+7,Lamp,Furniture,6,120,Gdansk
+8,Phone,Electronics,1,2800,Warsaw
+9,Sofa,Furniture,1,2200,Krakow
+10,Tablet,Electronics,2,1600,Gdansk

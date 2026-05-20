@@ -1,7 +1,9 @@
+@"
 .venv/
 __pycache__/
 *.pyc
 .idea/
 mlruns/
 mlflow.db
-*.db
+lab08/logs/
+"@ | Set-Content .gitignore -Encoding UTF8
