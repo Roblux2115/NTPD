@@ -1,0 +1,11 @@
+transaction_id,product_id,region,amount
+1,101,North,1200
+2,102,South,500
+3,103,East,2500
+4,101,West,1800
+5,104,North,700
+6,102,South,1400
+7,105,East,3200
+8,103,West,900
+9,104,North,2200
+10,105,South,4100

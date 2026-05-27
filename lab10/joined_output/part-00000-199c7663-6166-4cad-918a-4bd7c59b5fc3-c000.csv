@@ -1,0 +1,11 @@
+transaction_id,product_name,category,region,amount
+1,Laptop,Electronics,North,1200
+2,Mouse,Electronics,South,500
+3,Desk,Furniture,East,2500
+4,Laptop,Electronics,West,1800
+5,Chair,Furniture,North,700
+6,Mouse,Electronics,South,1400
+7,Phone,Electronics,East,3200
+8,Desk,Furniture,West,900
+9,Chair,Furniture,North,2200
+10,Phone,Electronics,South,4100

@@ -1,0 +1,16 @@
+id,product,category,price
+1,Laptop,Electronics,3500
+2,Mouse,Electronics,80
+3,Desk,Furniture,700
+4,Chair,Furniture,250
+5,Phone,Electronics,2200
+6,Keyboard,Electronics,300
+7,Monitor,Electronics,1200
+8,Sofa,Furniture,4000
+9,Lamp,Furniture,150
+10,Tablet,Electronics,1800
+11,Printer,Electronics,900
+12,Wardrobe,Furniture,2700
+13,TV,Electronics,4500
+14,Bed,Furniture,3200
+15,Headphones,Electronics,600
